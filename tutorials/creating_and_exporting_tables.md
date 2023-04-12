@@ -19,7 +19,7 @@ R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
 As soon as we have cleaned our data and conducted our analyses to test our hypotheses and investigate our research questions, we want to be able to present our findings in an appealing and readable way. This can be done in various ways, but one important means of visualizing data is the use of tables.
 In the social sciences, many journals make use of the formatting and citation guidelines provided by the *American Psychological Association (APA)*, whose current edition is its 7th revision. 
 While there are many existing options for creating tables in APA format, several packages often only allow you to format tables using a specific type of analysis or lack the ability of easily converting them to Word. 
-This is why in this tutorial, functions of the packages ```rempsyc``` are introduced as they allow for a great degree of flexibility.
+This is why in this tutorial, functions of the package ```rempsyc``` are introduced as they allow for a great degree of flexibility.
 
 
 # Set Up the R session
