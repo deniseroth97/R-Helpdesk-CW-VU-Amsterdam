@@ -16,15 +16,15 @@ R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
 
 # Introduction
 
-As soon as we have cleaned our data and conducted our analyses to test our hypotheses and investigate our research questions, we want to be able to present our findings in an appealing and readable way. This can be done in various ways, but one important means of visualizing data is the use of tables.
+As soon as we have cleaned our data and conducted our analyses to test our hypotheses, and investigate our research questions, we want to present our findings in an appealing and readable way. There are various options for doing this, but one important means of visualizing data is the use of tables.
 In the social sciences, many journals make use of the formatting and citation guidelines provided by the *American Psychological Association (APA)*, whose current edition is its 7th revision. 
 While there are many existing options for creating tables in APA format, several packages often only allow you to format tables using a specific type of analysis or lack the ability of easily converting them to Word. 
-This is why in this tutorial, functions of the package ```rempsyc``` are introduced as they allow for a great degree of flexibility.
+This is why in this tutorial, functions of the package ```rempsyc``` are introduced. As opposed to packages with similar functions, this one allows for a great degree of flexibility.,
 
 
 # Set Up the R session
 
-When we start working in R, we always need to setup our session. For this we need to set our working directory, in this case I am doing that for the folder that holds the downloaded dataset from [Kaggle](https://www.kaggle.com/datasets/gianinamariapetrascu/survey-on-students-perceptions-of-ai-in-education/). Kaggle is an online data scientist community that provides a wide range of different datasets that are freely available to users to practice their computational skills. In this specific example we will be using a dataset which contains the results of a survey conducted on undergraduate students enrolled in the 2nd and 3rd year of study at the Faculty of Cybernetics, Statistics and Economic Informatics at the Bucharest University of Economic Studies. 
+When we start working in R, we always need to setup our session. For this we need to set our working directory. In this case I am doing that for the folder that holds the downloaded dataset from [Kaggle](https://www.kaggle.com/datasets/gianinamariapetrascu/survey-on-students-perceptions-of-ai-in-education/). Kaggle is an online data scientists' community that provides a wide range of different datasets that are freely available to users to practice their computational skills. In this specific example, we will be using a dataset which contains the results of a survey conducted on undergraduate students enrolled in the 2nd and 3rd year of study at the Faculty of Cybernetics, Statistics and Economic Informatics at the Bucharest University of Economic Studies. 
 
 ```{r, eval=F, error=F}
 setwd("YOURWORKINGDIRECTORY")
@@ -32,7 +32,7 @@ setwd("YOURWORKINGDIRECTORY")
 
 
 
-The next step for setting up our session will be to load the packages that we will be using. We will use ```tidyverse``` for data wrangling and then only need to load ```rempsyc``` in addition to that. As ```rempsyc``` functions as a wrapper around ```flextable```, we will not need to explicitly the latter package.  Note that you potentially need to install some of these packages, however.
+The next step for setting up our session will be to load the packages that we will be using. We will use ```tidyverse``` for data wrangling and then only need to load ```rempsyc``` in addition to that. As ```rempsyc``` functions as a wrapper around ```flextable```, we will not need to explicitly load the latter package.  Note that you potentially need to install some of these packages, however.
 
 
 
@@ -48,13 +48,13 @@ Furthermore, we are reading in our data in ```.csv``` format.
 
 
 ```{r, eval=T}
-mydata <-read_csv("/Users/deniseroth/Downloads/Survey_AI.csv")
+mydata <- read_csv("/Users/deniseroth/Downloads/Survey_AI.csv")
 ```
 
 
 ## Prepare the dataset
 
-Let us first select only the variables that we will be using for our analysis and give them a more intuitive variable name. We want to see whether there is a relationship between students’ knowledge AI and their perceptions of its usefulness in education. 
+Let us first select only the variables that we will be using for our analysis and give them a more intuitive variable name. We want to see whether there is a relationship between students’ knowledge of AI and their perceptions of its usefulness in education. 
 
 
 ```{r, eval=T}
@@ -62,7 +62,7 @@ mydata <- mydata %>%  select(Knowledge = Q1.AI_knowledge, `AI Utility` = Q7.Util
 ```
 
 
-In a next step, we should create a factor variable that contains information of the respondents’ sex as a control variable and give it a meaningful scale. 
+In a next step, we should create a factor variable that contains information on the respondents’ sex as a control variable and give it a meaningful scale. 
 
 
 ```{r, eval=T}
