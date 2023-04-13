@@ -149,4 +149,4 @@ nice_t_test(
 ```
 
 
-These are only some of the options offered with ```nice_table``` and ```rempsyc```. For further information, check out [Rémi Thériault's vignette](https://rempsyc.remi-theriault.com/articles/table/).
+These are only some of the options offered with ```nice_table``` and ```rempsyc```. For further information, check out [Rémi Thériault's vignette](https://rempsyc.remi-theriault.com/articles/table).
