@@ -12,6 +12,14 @@ R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
 - [Integration with ```rempsyc``` functions](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/creating_and_exporting_tables.md#integration-with-rempsyc-functions/)
     - [Linear Regression with ```nice_lm```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/creating_and_exporting_tables.md#linear-regression-with-nice_lm/)
     - [T-test with ```nice_t_test```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/creating_and_exporting_tables.md#t-test-with-nice_t_test/)
+- [Correlation Tables with ```apaTables```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#correlation-tables-with-apatables/)
+    - [Read in the dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#read-in-the-dataset-1/)
+    - [Prepare the data](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#prepare-the-data/)
+    - [Creating Correlation Table](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#creating-correlation-table/)
+- [ANOVA tables with ```apaTables```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#anova-tables-with-apatables/)
+    - [Creating an example dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#creating-an-example-dataset/)
+    - [Run model and create exportable ANOVA table](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#run-model-and-create-exportable-anova-table/)
+    - [Further options](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#further-options/)
 
 
 
@@ -219,7 +227,7 @@ apa.aov.table(ad_model1, filename = "Table2_APA.doc", table.number = 2)
 
 ## Further options
 
-Note that you can also use the ```apaTables``` for other models, such as linear regression models. As is typical with R, there is not one single way of using it and different options offer different strengths and weaknesses.
+Note that you can also use the ```apaTables``` for other models, such as linear regression models. As is typical with R, there is not one single way of using a package or function and different options offer different strengths and weaknesses.
 
 
 
