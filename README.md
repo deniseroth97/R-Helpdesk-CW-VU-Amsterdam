@@ -8,4 +8,4 @@ As a faculty that is currently moving towards embracing Open Science principles,
 
 With time, this repository will be upadted with current and past documents (including FAQs, links to other resources, etc.).
 All righful owners of the materials will be cited and/or linked to.
-If you see any activity that you disagree with or find any mistakes, please reach out to me.
+
