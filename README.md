@@ -9,3 +9,8 @@ As a faculty that is currently moving towards embracing Open Science principles,
 With time, this repository will be updated with current and past documents (including FAQs, links to other resources, etc.).
 All righful owners of the materials will be cited and/or linked to.
 
+## Overview of current tutorials
+
+- [Creating and Exporting Tables in APA Format (7th Edition)](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#creating-and-exporting-tables-in-apa-format-7th-edition)
+
+
