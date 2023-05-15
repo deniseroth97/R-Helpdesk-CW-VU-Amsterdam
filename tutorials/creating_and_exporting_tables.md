@@ -19,7 +19,8 @@ R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
 As soon as we have cleaned our data and conducted our analyses to test our hypotheses, and investigate our research questions, we want to present our findings in an appealing and readable way. There are various options for doing this, but one important means of visualizing data is the use of tables.
 In the social sciences, many journals make use of the formatting and citation guidelines provided by the *American Psychological Association (APA)*, whose current edition is its 7th revision. 
 While there are many existing options for creating tables in APA format, several packages often only allow you to format tables using a specific type of analysis or lack the ability of easily converting them to Word. 
-This is why in this tutorial, functions of the package ```rempsyc``` are introduced. As opposed to packages with similar functions, this one allows for a great degree of flexibility.,
+This is why in this tutorial, functions of the package ```rempsyc``` are introduced. As opposed to packages with similar functions, this one allows for a great degree of flexibility.
+In addition, this tutorial also includes alternatives and provides a brief introduction in how to use an alternative package (```apaTables```) for correlation and ANOVA tables.
 
 
 # Set Up the R session
@@ -150,3 +151,77 @@ nice_t_test(
 
 
 These are only some of the options offered with ```nice_table``` and ```rempsyc```. For further information, check out [Rémi Thériault's vignette](https://rempsyc.remi-theriault.com/articles/table).
+
+
+# Correlation Tables with ```apaTables```
+
+For this example, we will be using a data set provided by the [General Social Survey](https://gss.norc.org/get-the-data/stata/). We want to find out whether different dimensions of institutional trust correlate with each other. 
+
+## Read in the dataset 
+
+As this data is in ```STATA``` format, we will use the ```read_dta``` function from the ```haven``` package.
+
+```{r, eval=F, message=F, error=F}
+d <- read_dta("/Users/deniseroth/Downloads/2021_stata/GSS2021.dta")
+```
+
+
+## Prepare the data
+
+Before running a quick correlation analysis, we select the variables of interest and give them more intuitive variable names. Furthermore, we remove all the missing observations from the dataframe. 
+
+```{r, eval=F, message=F, error=F}
+d <- d %>% dplyr::select(matches("CON"))
+
+d <- d %>%  dplyr::select(confed, conjudge, consci, conlegis, conarmy)
+
+d <- d %>% dplyr::rename(
+                  federal = confed,
+                  court = conjudge,
+                  science = consci,
+                  congress = conlegis,
+                  military = conarmy)
+
+d <- drop_na(d)
+```
+
+## Creating Correlation Table
+
+Finally, we use the ```apa.cor.table()``` function to create a correlation table that we can immediately export as a ```.docx``` file. 
+
+```{r, eval=F, message=F, error=F}
+apa.cor.table(d, filename="Table1_APA.doc", table.number=1)
+```
+
+
+# ANOVA tables with ```apaTables```
+
+## Creating an example dataset
+
+For this example, we quickly create a data frame in R. This step would of course be replaced with you reading in your own data that you would like to read into R. In this artificial data set, we test whether the weather used in an advertisement affects participants' attitudes towards the brand. 
+
+```{r, eval=F, message=F, error=F}
+set.seed(123)
+ad_data <- tibble(
+  participant = rep(1:20, each = 6),
+  weather = as_factor(rep(c("Sunny", "Cloudy", "Rainy"), each = 2, times = 20)),
+  attitude_toward_brand = rnorm(120, mean = c(5, 4, 4, 3, 3, 2), sd = 1))
+```
+
+## Run model and create exportable ANOVA table 
+
+```{r, eval=F, message=F, error=F}
+ad_model1 <- aov(attitude_toward_brand ~ weather, data = ad_data)
+
+apa.aov.table(ad_model1, filename = "Table2_APA.doc", table.number = 2)
+```
+
+## Further options
+
+Note that you can also use the ```apaTables``` for other models, such as linear regression models. As is typical with R, there is not one single way of using it and different options offer different strengths and weaknesses.
+
+
+
+
+
+
