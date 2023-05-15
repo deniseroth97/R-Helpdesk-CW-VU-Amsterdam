@@ -12,6 +12,8 @@ R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
 - [Integration with ```rempsyc``` functions](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/creating_and_exporting_tables.md#integration-with-rempsyc-functions/)
     - [Linear Regression with ```nice_lm```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/creating_and_exporting_tables.md#linear-regression-with-nice_lm/)
     - [T-test with ```nice_t_test```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/creating_and_exporting_tables.md#t-test-with-nice_t_test/)
+- [Correlation Tables with ```apaTables```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/creating_and_exporting_tables.md#correlation-tables-with-apaTables/)
+    - [
 
 
 # Introduction
