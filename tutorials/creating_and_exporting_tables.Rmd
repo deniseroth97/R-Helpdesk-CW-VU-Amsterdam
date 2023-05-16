@@ -1,3 +1,16 @@
+---
+title: "Creating and Exporting Tables in APA Format (7th Edition)"
+author: "R Helpdesk (Denise J. Roth) @FSW VU Amsterdam"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  github_document:
+    toc: yes
+    toc_depth: 5
+editor_options:
+  chunk_output_type: inline
+---
+
+
 # Introduction
 
 As soon as we have cleaned our data and conducted our analyses to test our hypotheses, and investigate our research questions, we want to present our findings in an appealing and readable way. There are various options for doing this, but one important means of visualizing data is the use of tables.
@@ -207,8 +220,3 @@ apa.aov.table(ad_model1, filename = "Table2_APA.doc", table.number = 2)
 ## Further options
 
 Note that you can also use the ```apaTables``` for other models, such as linear regression models. As is typical with R, there is not one single way of using a package or function and different options offer different strengths and weaknesses.
-
-
-
-
-
