@@ -42,23 +42,27 @@ setwd("YOURWORKINGDIRECTORY")
 
 
 
-The next step for setting up our session will be to load the packages that we will be using. We will use ```tidyverse``` for data wrangling and then only need to load ```rempsyc``` in addition to that. As ```rempsyc``` functions as a wrapper around ```flextable```, we will not need to explicitly load the latter package.  Note that you potentially need to install some of these packages, however.
+The next step for setting up our session will be to load the packages that we will be using. We will use some packages that are included in the ```tidyverse``` for data wrangling (```dplyr```, ```tidyr``` and ```haven```) and then need to load ```rempsyc``` in addition to that. As ```rempsyc``` functions as a wrapper around ```flextable```, we will not need to explicitly load the latter package. We also need ```rio``` for importing different data sets. For some of the tables, we will also be using ```apaTables```  Note that you potentially need to install some of these packages, however.
 
 
 
 ```{r, eval=T, message=F}
-library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(haven)
 library(rempsyc)
+library(rio)
+library(apaTables)
 ```
 
 
-# Read in the dataset 
+# Import the dataset 
 
-Furthermore, we are reading in our data in ```.csv``` format.
+Furthermore, we are importing our data in ```.csv``` format.
 
 
 ```{r, eval=T}
-mydata <- read_csv("/Users/deniseroth/Downloads/Survey_AI.csv")
+mydata <- import("/Users/deniseroth/Downloads/Survey_AI.csv")
 ```
 
 
@@ -166,12 +170,12 @@ These are only some of the options offered with ```nice_table``` and ```rempsyc`
 
 For this example, we will be using a data set provided by the [General Social Survey](https://gss.norc.org/get-the-data/stata/). We want to find out whether different dimensions of institutional trust correlate with each other. 
 
-## Read in the dataset 
+## Import the dataset 
 
-As this data is in ```STATA``` format, we will use the ```read_dta``` function from the ```haven``` package.
+In this example, our data is a ```.dta``` file commonly used in ```STATA```. However, the ```import()``` can handle this file format just as well.
 
 ```{r, eval=F, message=F, error=F}
-d <- read_dta("/Users/deniseroth/Downloads/2021_stata/GSS2021.dta")
+d <- import("/Users/deniseroth/Downloads/2021_stata/GSS2021.dta")
 ```
 
 
