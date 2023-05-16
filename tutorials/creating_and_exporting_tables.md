@@ -4,7 +4,7 @@ R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
 
 - [Introduction](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#introduction)
 - [Set Up the R Session](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#set-up-the-r-session)
-- [Read in the dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#read-in-the-dataset)
+- [Import the dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#import-the-dataset)
     - [Prepare the dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#prepare-the-dataset)
 - [Example: Simple Linear Regression](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#example-simple-linear-regression)
     - [Creating a ```nice_table```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#creating-a-nice_table)
@@ -13,7 +13,7 @@ R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
     - [Linear Regression with ```nice_lm```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#linear-regression-with-nice_lm)
     - [T-test with ```nice_t_test```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#t-test-with-nice_t_test)
 - [Correlation Tables with ```apaTables```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#correlation-tables-with-apatables)
-    - [Read in the dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#read-in-the-dataset-1)
+    - [Import the dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#import-the-dataset-1)
     - [Prepare the data](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#prepare-the-data)
     - [Creating Correlation Table](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#creating-correlation-table)
 - [ANOVA tables with ```apaTables```](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#anova-tables-with-apatables)
