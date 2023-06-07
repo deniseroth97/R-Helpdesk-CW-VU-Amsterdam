@@ -1,6 +1,17 @@
 # Repeated Measures ANOVA
 R Helpdesk (Denise J. Roth) @FSW VU Amsterdam
 
+- [Introduction](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md#introduction)
+- [Set up the R Session](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md#set-up-the-r-session)
+- [Import the Dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md#import-the-dataset)
+    - [Prepare the Dataset](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md#prepare-the-dataset)
+    - [Convert the Dataframe from Wide to Long Format](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md#convert-the-dataframe-from-wide-to-long-format)
+- [Perform Repeated Measure Analysis](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md#perform-repeated-measure-analysis)
+- [The Multi Level Approach](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md#the-multi-level-approach)
+
+
+
+
 # Introduction
 
 As social scientists delving into the world of statistics, it's essential to grasp various statistical techniques commonly used in research. One such technique is the Repeated Measures Analysis of Variance (ANOVA). In this tutorial, we'll explore what a repeated measures ANOVA is, when to use it, and how it can be applied to analyze data in research studies. So let's dive in!
