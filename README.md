@@ -12,5 +12,5 @@ All righful owners of the materials will be cited and/or linked to.
 ## Overview of current tutorials
 
 - [Creating and Exporting Tables in APA Format (7th Edition)](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/creating_and_exporting_tables.md#creating-and-exporting-tables-in-apa-format-7th-edition)
-
+- [Repeated Measures ANOVA](https://github.com/deniseroth97/R-Helpdesk-CW-VU-Amsterdam/blob/main/tutorials/repeated_measures_ANOVA.md)
 
